@@ -19,8 +19,8 @@
 
 [Source Code](lib/AminatedNeumorphismButton.dart)
 
-![](readmi_image/unClick.JPG)
-![](readmi_image/click.JPG)
+![](readmi_image/animated_neumorphism.JPG)
+![](readmi_image/selected_neumorphism.JPG)
 
 A few resources to get you started if this is your first Flutter project:
 
