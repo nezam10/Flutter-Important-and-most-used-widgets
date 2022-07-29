@@ -1,10 +1,11 @@
-# flutter_animation
+# flutter_animation Widgets
 
-A new Flutter project.
+### AnimatedPhysicalModel Widget
 
-## Getting Started
+[Source Code](lib/animatedPhysicalModelWidget.dart)
 
-This project is a starting point for a Flutter application.
+![](readmi_image/unClick.JPG)
+![](readmi_image/click.JPG)
 
 A few resources to get you started if this is your first Flutter project:
 
