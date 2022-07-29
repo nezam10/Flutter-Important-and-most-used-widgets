@@ -6,4 +6,4 @@
 
 ### Flutter Neumorphism
 
-* [Custom Neumorphism and Animated Neumorphism](flutter_animation/README.md)
+* [Custom Neumorphism and Animated Neumorphism](flutter_neumorphism/README.md)
