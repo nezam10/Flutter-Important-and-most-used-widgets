@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphism/AminatedNeumorphismButton.dart';
 import 'package:flutter_neumorphism/CustomNeumorphismButton.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Neumorphism',
-      home: CustomNeumorphismButton(),
+      home: AnimatedNeumorphismButton(),
     );
   }
 }
