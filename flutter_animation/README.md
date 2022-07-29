@@ -8,8 +8,8 @@ This project is a starting point for a Flutter application.
 
 #### AnimatedPhysicalModel Widget
 
-![](unClick.JPG)
-![](click.JPG)
+![](readmi_image/unClick.JPG)
+![](readmi_image/click.JPG)
 
 A few resources to get you started if this is your first Flutter project:
 
