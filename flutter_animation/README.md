@@ -2,7 +2,7 @@
 
 ### AnimatedPhysicalModel Widget
 
-[Source Code](animatedPhysicalModelWidget.dart)
+[Source Code](lib/animatedPhysicalModelWidget.dart)
 
 ![](readmi_image/unClick.JPG)
 ![](readmi_image/click.JPG)
