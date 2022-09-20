@@ -1,16 +1,11 @@
-# google_signin_without_firebase
+## Flutter Google SignIn without Firebase
+### Google SignIn without Firebase
 
-A new Flutter project.
+[Source Code](lib/)
 
-## Getting Started
+![](readme_image/create jks file- google login without firebase.JPG)
 
-This project is a starting point for a Flutter application.
+![](readme_image/app_gradle_google_login_without_firebase.JPG)
 
-A few resources to get you started if this is your first Flutter project:
+![](readme_image/app_gradle_config_google_login_without_firebase.JPG)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
