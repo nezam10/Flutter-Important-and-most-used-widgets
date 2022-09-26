@@ -55,7 +55,7 @@ class LoggedInPage extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             Text(
-              "Email : " + user.email!,
+              "Email : " + user.email,
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
