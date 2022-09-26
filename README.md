@@ -11,3 +11,7 @@
 ### Flutter Google SignIn without Firebase
 
 * [Google SignIn without Firebase](google_signin_without_firebase/README.md)
+
+### Flutter Facebook Login without Firebase
+
+* [Facebook Login without firebase](flutter_facebook_login_without_firebase/README.md)
