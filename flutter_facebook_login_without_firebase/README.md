@@ -16,6 +16,7 @@
 To generate a development key hash, run the following command in a command prompt in the Java SDK folder:
 
 	4.1 : - keytool -exportcert -alias androiddebugkey -keystore "C:\Users\USERNAME\.android\debug.keystore" | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" sha1 -binary | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" base64
+	
 	4.2 :- Download openssl-for-windows file <https://code.google.com/archive/p/openssl-for-windows/downloads>
 
 ### 5th step :- Dashboard>Basic>Advance ### App id & facebook_client_token
