@@ -32,12 +32,17 @@ class _HomePageState extends State<HomePage> {
           title: const Text('Facebook Auth Example'),
         ),
         body: _isLoggedIn
-            ? Column(
-                children: [
-                  Image.network(_userObj["picture"]["data"]["url"]),
-                  Text(_userObj["name"]),
-                  Text(_userObj["email"]),
-                  TextButton(
+            ? Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.network(_userObj["picture"]["data"]["url"]),
+                    const SizedBox(height: 20),
+                    Text(_userObj["name"]),
+                    const SizedBox(height: 20),
+                    Text(_userObj["email"]),
+                    const SizedBox(height: 20),
+                    ElevatedButton(
                       onPressed: () {
                         FacebookAuth.instance.logOut().then((value) {
                           setState(() {
@@ -46,8 +51,10 @@ class _HomePageState extends State<HomePage> {
                           });
                         });
                       },
-                      child: Text("Logout"))
-                ],
+                      child: const Text("Logout"),
+                    )
+                  ],
+                ),
               )
             : Center(
                 child: ElevatedButton(
