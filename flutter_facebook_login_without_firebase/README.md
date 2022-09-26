@@ -33,5 +33,13 @@ To generate a development key hash, run the following command in a command promp
 #### Android/Value/Styles.txt
 ![](readmi_images/styles_text.JPG)
 
+## Output/Result
+
+#### Login
+![](readmi_images/login.jpg)
+
+#### Home
+![](readmi_images/login_home.jpg)
+
 	
 
