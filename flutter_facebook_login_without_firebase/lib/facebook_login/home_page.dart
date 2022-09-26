@@ -9,20 +9,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Map<String, dynamic>? _userData;
-  AccessToken? _accessToken;
-  bool _checking = true;
-
   //
   bool _isLoggedIn = false;
   Map _userObj = {};
-
-  Future<void> _logOut() async {
-    await FacebookAuth.instance.logOut();
-    _accessToken = null;
-    _userData = null;
-    setState(() {});
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +47,7 @@ class _HomePageState extends State<HomePage> {
               )
             : Center(
                 child: ElevatedButton(
-                  child: Text("Login with Facebook"),
+                  child: const Text("Login with Facebook"),
                   onPressed: () async {
                     FacebookAuth.instance.login(
                         permissions: ["public_profile", "email"]).then((value) {
