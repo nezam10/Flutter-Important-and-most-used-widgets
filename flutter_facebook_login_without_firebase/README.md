@@ -1,10 +1,9 @@
 # flutter_facebook_login_without_firebase
 
+[Source Code](lib/)
+
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
 
 ### 1st step :- add pubspec.yaml <flutter_facebook_auth> package
 
@@ -14,14 +13,24 @@ This project is a starting point for a Flutter application.
 
 ### 4th step :- Create hashes Key
 
+To generate a development key hash, run the following command in a command prompt in the Java SDK folder:
+
+	4.1 : - keytool -exportcert -alias androiddebugkey -keystore "C:\Users\USERNAME\.android\debug.keystore" | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" sha1 -binary | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" base64
+	4.2 :- Download openssl-for-windows file <https://code.google.com/archive/p/openssl-for-windows/downloads>
+
+### 5th step :- Dashboard>Basic>Advance ### App id & facebook_client_token
+
+#### Add Package
+![](readmi_images/addpackage.JPG)
+
+#### AndroidManifest
+![](readmi_images/androidmanifest1.JPG)
+
+#### readmi_images
+![](readmi_images/androidmanifest2.JPG)
+
+#### Android/Value/Styles.txt
+![](readmi_images/styles_text.JPG)
+
 	
 
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
