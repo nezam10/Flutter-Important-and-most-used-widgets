@@ -18,4 +18,4 @@
 
 ### Flutter Google Map
 
-* [Google Map](flutter_google_map/README.md)
+* [Flutter Google Map](flutter_google_map/README.md)
