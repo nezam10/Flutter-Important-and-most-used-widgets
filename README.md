@@ -15,3 +15,7 @@
 ### Flutter Facebook Login without Firebase
 
 * [Facebook Login without firebase](flutter_facebook_login_without_firebase/README.md)
+
+### Flutter Google Map
+
+* [Google Map](flutter_google_map/README.md)
