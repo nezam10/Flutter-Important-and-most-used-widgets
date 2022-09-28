@@ -27,6 +27,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: const Text("Google Map"),
+        ),
         body: GoogleMap(
           mapType: MapType.hybrid,
           initialCameraPosition: _kGooglePlex,
