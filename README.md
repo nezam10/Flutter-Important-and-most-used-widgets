@@ -19,3 +19,7 @@
 ### Flutter Google Map
 
 * [Flutter Google Map](flutter_google_map/README.md)
+
+### Flutter GetX Localization
+
+* [Flutter GetX Localization](flutter_localization/README.md)
