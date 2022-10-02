@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_google_map/initial_page.dart';
-import 'package:google_maps_flutter_android/google_maps_flutter_android.dart';
+import 'package:get/get.dart';
 // ignore: depend_on_referenced_packages
-import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platform_interface.dart';
 
-import 'flutter_google_map/home_page.dart';
-
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  //await DotEnv().load(fileName: 'apiKey.env');
   // final GoogleMapsFlutterPlatform mapsImplementation =
   //     GoogleMapsFlutterPlatform.instance;
   // if (mapsImplementation is GoogleMapsFlutterAndroid) {
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
