@@ -75,7 +75,9 @@ class LocationSearchDialog extends StatelessWidget {
               },
               onSuggestionSelected: (Prediction suggestion) {
                 print("My location is " + suggestion.description!);
-                //Get.find<LocationController>().setLocation(suggestion.placeId!, suggestion.description!, mapController);
+                print("My location id " + suggestion.placeId!.toString());
+                // Get.find<LocationController>().setLocation(suggestion.placeId!,
+                //     suggestion.description!, mapController);
                 Get.back();
               },
             )),

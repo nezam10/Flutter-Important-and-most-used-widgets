@@ -18,7 +18,7 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _cameraPosition =
-        CameraPosition(target: LatLng(45.521563, -122.677433), zoom: 17);
+        const CameraPosition(target: LatLng(45.521563, -122.677433), zoom: 17);
   }
 
   late GoogleMapController _mapController;
@@ -44,9 +44,11 @@ class _MapScreenState extends State<MapScreen> {
                   left: 10,
                   right: 20,
                   child: GestureDetector(
-                    //onTap: () {},
-                    onTap: () => Get.dialog(
-                        LocationSearchDialog(mapController: _mapController)),
+                    onTap: () {
+                      Get.dialog(
+                          LocationSearchDialog(mapController: _mapController));
+                      print("Click Dialog>>>>>>>>>>>>>>>>>");
+                    },
                     child: Container(
                       height: 50,
                       padding: const EdgeInsets.symmetric(horizontal: 5),
@@ -62,12 +64,12 @@ class _MapScreenState extends State<MapScreen> {
                           child: Text(
                             '${locationController.pickPlaceMark.name ?? ''} ${locationController.pickPlaceMark.locality ?? ''} '
                             '${locationController.pickPlaceMark.postalCode ?? ''} ${locationController.pickPlaceMark.country ?? ''}',
-                            style: TextStyle(fontSize: 20),
+                            style: const TextStyle(fontSize: 20),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Icon(Icons.search,
                             size: 25,
                             color:
