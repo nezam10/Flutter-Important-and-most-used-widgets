@@ -15,8 +15,8 @@ class LocationSearchDialog extends StatelessWidget {
     final TextEditingController _controller = TextEditingController();
 
     return Container(
-      margin: EdgeInsets.only(top: 150),
-      padding: EdgeInsets.all(5),
+      margin: const EdgeInsets.only(top: 150),
+      padding: const EdgeInsets.all(5),
       alignment: Alignment.topCenter,
       child: Material(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
@@ -54,9 +54,9 @@ class LocationSearchDialog extends StatelessWidget {
               },
               itemBuilder: (context, Prediction suggestion) {
                 return Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: Row(children: [
-                    Icon(Icons.location_on),
+                    const Icon(Icons.location_on),
                     Expanded(
                       child: Text(suggestion.description!,
                           maxLines: 1,
