@@ -12,6 +12,14 @@ class PdfPreviewPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("PDF Preview"),
+        actions: [
+          IconButton(
+            onPressed: () {
+              makePdf(invoice);
+            },
+            icon: const Icon(Icons.download),
+          ),
+        ],
       ),
       body: PdfPreview(
         build: (context) => makePdf(invoice),

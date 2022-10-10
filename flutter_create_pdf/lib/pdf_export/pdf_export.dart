@@ -55,11 +55,11 @@ Future<Uint8List> makePdf(Invoice invoice) async {
                   (e) => TableRow(
                     children: [
                       Expanded(
-                        child: PaddedText(e.description),
+                        child: paddedText(e.description),
                         flex: 2,
                       ),
                       Expanded(
-                        child: PaddedText("\$${e.cost}"),
+                        child: paddedText("\$${e.cost}"),
                         flex: 1,
                       )
                     ],
@@ -67,15 +67,15 @@ Future<Uint8List> makePdf(Invoice invoice) async {
                 ),
                 TableRow(
                   children: [
-                    PaddedText('TAX', align: TextAlign.right),
-                    PaddedText(
+                    paddedText('TAX', align: TextAlign.right),
+                    paddedText(
                         '\$${(invoice.totalCost() * 0.1).toStringAsFixed(2)}'),
                   ],
                 ),
                 TableRow(
                   children: [
-                    PaddedText('TOTAL', align: TextAlign.right),
-                    PaddedText(
+                    paddedText('TOTAL', align: TextAlign.right),
+                    paddedText(
                         '\$${(invoice.totalCost() * 1.1).toStringAsFixed(2)}')
                   ],
                 )
@@ -86,7 +86,7 @@ Future<Uint8List> makePdf(Invoice invoice) async {
                 "THANK YOU FOR YOUR CUSTOM!",
                 style: Theme.of(context).header2,
               ),
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
             ),
             Text(
                 "Please forward the below slip to your accounts payable department."),
@@ -100,35 +100,35 @@ Future<Uint8List> makePdf(Invoice invoice) async {
               children: [
                 TableRow(
                   children: [
-                    PaddedText('Account Number'),
-                    PaddedText(
+                    paddedText('Account Number'),
+                    paddedText(
                       '1234 1234',
                     )
                   ],
                 ),
                 TableRow(
                   children: [
-                    PaddedText(
+                    paddedText(
                       'Account Name',
                     ),
-                    PaddedText(
+                    paddedText(
                       'ADAM FAMILY TRUST',
                     )
                   ],
                 ),
                 TableRow(
                   children: [
-                    PaddedText(
+                    paddedText(
                       'Total Amount to be Paid',
                     ),
-                    PaddedText(
+                    paddedText(
                         '\$${(invoice.totalCost() * 1.1).toStringAsFixed(2)}')
                   ],
                 )
               ],
             ),
             Padding(
-              padding: EdgeInsets.all(30),
+              padding: const EdgeInsets.all(30),
               child: Text(
                 'Please ensure all cheques are payable to the ADAM FAMILY TRUST.',
                 style: Theme.of(context).header3.copyWith(
@@ -142,15 +142,16 @@ Future<Uint8List> makePdf(Invoice invoice) async {
       },
     ),
   );
+
   return pdf.save();
 }
 
-Widget PaddedText(
+Widget paddedText(
   final String text, {
   final TextAlign align = TextAlign.left,
 }) =>
     Padding(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Text(
         text,
         textAlign: align,
