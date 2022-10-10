@@ -5,8 +5,8 @@
 
 ## Getting Started
 
-### 1st Step : Add package <pdf> - package link <https://pub.dev/packages/pdf>
-### 2st Step : Add package <printing> - package link <https://pub.dev/packages/printing>
+### 1st Step : Add pdf package <pdf> - package link <https://pub.dev/packages/pdf>
+### 2st Step : Add printing package <printing> - package link <https://pub.dev/packages/printing>
 
 ## Output/Result
 
