@@ -1,16 +1,15 @@
-# flutter_create_pdf
+# flutter Create PDF
 
-A new Flutter project.
+[Source Code](lib/)
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### 1st Step : Add package <pdf> - package link <https://pub.dev/packages/pdf>
+### 2st Step : Add package <printing> - package link <https://pub.dev/packages/printing>
 
-A few resources to get you started if this is your first Flutter project:
+## Output/Result
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#### View Pdf
+![](assets/images/flutter_pdf.JPG)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
