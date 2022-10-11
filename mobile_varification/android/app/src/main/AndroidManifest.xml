@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_create_pdf">
-
+    package="com.example.mobile_varification">
    <application
-        android:label="flutter_create_pdf"
+        android:label="mobile_varification"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -31,7 +30,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-            
-        
     </application>
 </manifest>

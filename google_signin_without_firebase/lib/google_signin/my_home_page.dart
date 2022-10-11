@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future signIn() async {
     final user = await GoogleSignInApi.login();
-     
+
     if (user == null) {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text("sing in failed")));
