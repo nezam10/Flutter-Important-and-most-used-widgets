@@ -9,6 +9,9 @@ class Languages extends Translations {
         'bn_BD': {
           'Hello': 'হ্যালো',
         },
+        'hi_IN': {
+          'Hello': 'नमस्ते दुनिया',
+        },
       };
 }
 

@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
                             Get.updateLocale(
                               const Locale('bn', 'BD'),
                             );
+                            prefs.setString("savelan", "bn");
 
                             // if (prefs.getBool("saveLanguage") == true) {
                             //   Get.updateLocale(
@@ -60,6 +61,20 @@ class HomePage extends StatelessWidget {
                             Get.updateLocale(
                               const Locale('en', 'US'),
                             );
+                            prefs.setString("savelan", "en");
+                            print(
+                                "Click Button : ............... ${prefs.getBool("saveLanguage")}");
+                          },
+                        ),
+                        const SizedBox(width: 10),
+                        ElevatedButton(
+                          child: const Text("Hindi"),
+                          onPressed: () {
+                            prefs.setBool("saveLanguage", false);
+                            Get.updateLocale(
+                              const Locale('hi', 'IN'),
+                            );
+                            prefs.setString("savelan", "hi");
                             print(
                                 "Click Button : ............... ${prefs.getBool("saveLanguage")}");
                           },

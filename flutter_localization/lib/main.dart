@@ -26,10 +26,13 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       translations: Languages(),
-      locale: prefs.getBool("saveLanguage") == true
-          ? const Locale('bn', 'BD')
-          : const Locale('en', 'US'),
-      fallbackLocale: const Locale('en', 'US'),
+      // locale: prefs.getBool("saveLanguage") == true
+      //     ? const Locale('bn', 'BD')
+      //     : const Locale('en', 'US'),
+      locale: prefs.getString('savelan') == null
+          ? const Locale("en")
+          : Locale(prefs.getString('savelan').toString()),
+      //fallbackLocale: const Locale('en', 'US'),
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
